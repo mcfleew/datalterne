@@ -13,118 +13,10 @@
             <div>
                 <!-- Card stats -->
                 <div class="flex flex-wrap sm:pb-24 md:pb-4">
-                    <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                            <div class="flex-auto p-4">
-                                <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                                            ETP GLOBAL
-                                        </h5>
-                                        <span class="font-semibold text-xl text-blueGray-700">
-                                            350,897
-                                        </span>
-                                    </div>
-                                    <div class="relative w-auto pl-4 flex-initial">
-                                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-red-500">
-                                            <i class="fas fa-briefcase"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-blueGray-400 mt-4">
-                                    <span class="text-emerald-500 mr-2">
-                                        <i class="fas fa-arrow-up"></i> 3.48%
-                                    </span>
-                                    <span class="whitespace-nowrap">
-                                        Since last month
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                            <div class="flex-auto p-4">
-                                <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                                            ETP ATLERNANTS
-                                        </h5>
-                                        <span class="font-semibold text-xl text-blueGray-700">
-                                            2,356
-                                        </span>
-                                    </div>
-                                    <div class="relative w-auto pl-4 flex-initial">
-                                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-orange-500">
-                                            <i class="fas fa-business-time"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-blueGray-400 mt-4">
-                                    <span class="text-red-500 mr-2">
-                                        <i class="fas fa-arrow-down"></i> 3.48%
-                                    </span>
-                                    <span class="whitespace-nowrap"> Since last week </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                            <div class="flex-auto p-4">
-                                <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                                            ETP CONTRAT D’APPRENTISSAGE
-                                        </h5>
-                                        <span class="font-semibold text-xl text-blueGray-700">
-                                            924
-                                        </span>
-                                    </div>
-                                    <div class="relative w-auto pl-4 flex-initial">
-                                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-pink-500">
-                                            <i class="fas fa-book-reader"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-blueGray-400 mt-4">
-                                    <span class="text-orange-500 mr-2">
-                                        <i class="fas fa-arrow-down"></i> 1.10%
-                                    </span>
-                                    <span class="whitespace-nowrap"> Since yesterday </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="w-full lg:w-6/12 xl:w-3/12 px-4">
-                        <div class="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">
-                            <div class="flex-auto p-4">
-                                <div class="flex flex-wrap">
-                                    <div class="relative w-full pr-4 max-w-full flex-grow flex-1">
-                                        <h5 class="text-blueGray-400 uppercase font-bold text-xs">
-                                            ETP CONTRAT DE PROFESSIONALISATION
-                                        </h5>
-                                        <span class="font-semibold text-xl text-blueGray-700">
-                                            49,65%
-                                        </span>
-                                    </div>
-                                    <div class="relative w-auto pl-4 flex-initial">
-                                        <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 shadow-lg rounded-full bg-lightBlue-500">
-                                            <i class="fas fa-user-graduate"></i>
-                                        </div>
-                                    </div>
-                                </div>
-                                <p class="text-sm text-blueGray-400 mt-4">
-                                    <span class="text-emerald-500 mr-2">
-                                        <i class="fas fa-arrow-up"></i> 12%
-                                    </span>
-                                    <span class="whitespace-nowrap">
-                                        Since last month
-                                    </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    @livewire('kpi.etp-global')
+                    @livewire('kpi.etp-alternant')
+                    @livewire('kpi.etp-apprentissage')
+                    @livewire('kpi.etp-professionnalisation')
                 </div>
             </div>
         </div>
@@ -137,7 +29,7 @@
                         <div class="flex flex-wrap items-center">
                             <div class="relative w-full max-w-full flex-grow flex-1">
                                 <h6 class="uppercase text-blueGray-100 mb-1 text-xs font-semibold">
-                                    Overview
+                                    Vue d'ensemble
                                 </h6>
                                 <h2 class="text-white text-xl font-semibold">
                                     Effort de recrutement
@@ -188,7 +80,7 @@
                             </div>
                             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                 <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                    See all
+                                    Tout voir
                                 </button>
                             </div>
                         </div>
@@ -202,10 +94,10 @@
                                         Région
                                     </th>
                                     <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                        Année de référence
+                                        Année Ref. (2020)
                                     </th>
                                     <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                        Année de comparaison
+                                        Année Comp. (2019)
                                     </th>
                                     <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                         Taux
@@ -304,7 +196,7 @@
                             </div>
                             <div class="relative w-full px-4 max-w-full flex-grow flex-1 text-right">
                                 <button class="bg-indigo-500 text-white active:bg-indigo-600 text-xs font-bold uppercase px-3 py-1 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">
-                                    See all
+                                    Tout voir
                                 </button>
                             </div>
                         </div>
@@ -317,8 +209,8 @@
                                     <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
                                         Niveau
                                     </th>
-                                    <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
-                                        A.R.
+                                    <th class="px-4 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-2 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left">
+                                        A.R. (2020)
                                     </th>
                                     <th class="px-6 bg-blueGray-50 text-blueGray-500 align-middle border border-solid border-blueGray-100 py-3 text-xs uppercase border-l-0 border-r-0 whitespace-nowrap font-semibold text-left min-w-140-px">
                                         Evolution
@@ -331,7 +223,7 @@
                                         CAP / BEP
                                     </th>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                        5
+                                        130
                                     </td>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                         <div class="flex items-center">
@@ -349,7 +241,7 @@
                                         BAC
                                     </th>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                        23
+                                        40
                                     </td>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                         <div class="flex items-center">
@@ -367,7 +259,7 @@
                                         BAC +2
                                     </th>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                        12
+                                        135
                                     </td>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                         <div class="flex items-center">
@@ -385,7 +277,7 @@
                                         BAC +3 / +4
                                     </th>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                        40
+                                        162
                                     </td>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                         <div class="flex items-center">
@@ -403,7 +295,7 @@
                                         BAC +5
                                     </th>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
-                                        7
+                                        73
                                     </td>
                                     <td class="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4">
                                         <div class="flex items-center">
