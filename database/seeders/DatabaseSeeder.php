@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
+use Illuminate\Support\Facades\DB;
+
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -13,6 +15,12 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        $path = database_path('scripts/data_capp.sql');
+        DB::unprepared(file_get_contents($path));
+        $this->command->info('App. contract table seeded!');
+
+        $path = database_path('scripts/data_cpro.sql');
+        DB::unprepared(file_get_contents($path));
+        $this->command->info('Pro. contract table seeded!');
     }
 }
