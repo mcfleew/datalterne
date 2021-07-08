@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS "data_capp";
+
 CREATE TABLE IF NOT EXISTS "data_capp" (
     "Delegation" TEXT,
     "Region" TEXT,
